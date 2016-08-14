@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
 	
 $(document).ready(function () { // Информация в углу о разрешении и типе BS
@@ -12,7 +24,8 @@ $(window).resize(function () {
 function print_cur_resolution() {
 	var curWidth = self.innerWidth;
 	if (curWidth < 768) {
-		$("#cur_bs_resolution").empty().append("XS\n" + curWidth);
+		window.location = 
+		//$("#cur_bs_resolution").empty().append("XS\n" + curWidth);
 	}
 	if (curWidth >= 768 && curWidth < 992) {
 		$("#cur_bs_resolution").empty().append("SM\n" + curWidth);
@@ -26,3 +39,4 @@ function print_cur_resolution() {
 } // конец отладочной функции
 
 </script>
+</html>
